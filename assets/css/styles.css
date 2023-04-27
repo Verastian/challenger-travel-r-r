@@ -1,0 +1,32 @@
+* Css Base */ ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Custom styles */
+.uppercase {
+  text-transform: uppercase;
+}
+.bg-dark-deep {
+  background-color: black;
+}
+.bg-calypso {
+  background-color: #0dcaf0;
+}
+.max-h-image-card {
+  max-height: 12.5em;
+}
+.min-h-card {
+  min-height: 22.5em;
+}
+.border-color {
+  border: none;
+  border-top: 3px solid #ccc;
+  width: 100%;
+}
