@@ -10,6 +10,7 @@ $(() => {
         }// fin de la condición
     });
 
+
     // Agregar smooth scrolling automatico a todos los enlaces con la clase "page-scroll"
     $(".page-scroll").on('click', function (event) {
         console.log(this.hash)
@@ -23,6 +24,7 @@ $(() => {
             });
         } // fin de la condición
     });
+
     // Data Form
     $(document).on('submit', 'form', function (event) {
         event.preventDefault();
@@ -43,7 +45,6 @@ $(() => {
             }, 2000);
         }// fin de la condición
     });
-
 
 });
 
