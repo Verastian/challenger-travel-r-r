@@ -23,7 +23,42 @@ $(() => {
             });
         } // fin de la condición
     });
+    // Data Form
+    $(document).on('submit', 'form', function (event) {
+        event.preventDefault();
+
+        let name = $('#name').val();
+        let subject = $('#password').val();
+        let message = $('#message').val();
+
+        if (!name || !subject || !message) {
+            $('#alert-modal').modal('show');
+
+        } else {
+            // alert('Formulario e]nviado con éxito');
+            $('.alert').show();
+            $('form')[0].reset();
+            setTimeout(function () {
+                $('.alert').fadeOut();
+            }, 2000);
+        }// fin de la condición
+    });
+
 
 });
 
+$(() => {
+    var myModal = $('#myModal');
+    var myInput = $('#myInput');
+
+    myModal.on('shown.bs.modal', function () {
+        myInput.focus();
+    });
+
+
+    $('[data-bs-toggle="tooltip"]').each(function () {
+        new bootstrap.Tooltip($(this));
+    });
+
+})
 

@@ -30,3 +30,53 @@ a {
   border-top: 3px solid #ccc;
   width: 100%;
 }
+/* effect Smooth-scroll */
+.navbar-transition.navbar-bg-in {
+  background-color: #000;
+  transition: background-color 0.5s ease-in;
+}
+.navbar-transition.navbar-bg-out {
+  background-color: transparent;
+  transition: background-color 0.5s ease-out;
+}
+
+.navbar-transition.navbar-bg-in .navbar-nav .nav-link {
+  color: #0dcaf0;
+  transition: color 0.5s ease-in;
+}
+
+.navbar-transition.navbar-bg-out .navbar-nav .nav-link {
+  color: inherit;
+  transition: color 0.5s ease-out;
+}
+
+.navbar-transition.navbar-bg-in .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-transition.navbar-bg-out .navbar-nav .nav-link:hover {
+  color: #0dcaf0;
+}
+
+.navbar-transition.navbar-bg-in .navbar-brand h1 span {
+  color: #0dcaf0;
+  transition: color 0.5s ease-in;
+}
+
+.navbar-transition.navbar-bg-out .navbar-brand h1 span {
+  color: inherit;
+  transition: color 0.5s ease-out;
+}
+.scroll-section {
+  display: none;
+}
+
+/* Change color tooltip */
+.tooltip-inner {
+  background-color: white;
+  color: black;
+}
+
+.tooltip-arrow {
+  border-bottom-color: white;
+}
